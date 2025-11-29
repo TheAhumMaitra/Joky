@@ -4,8 +4,8 @@ export default async function JokePage() {
     const joke = await data.text();
 
     return (
-        <div className=" h-[40vh] flex flex-col items-center justify-center">
-            <p className="m-4 text-center font-bold text-green-500">{joke}</p>
+        <div className=" h-[50vh] flex flex-col items-center justify-center">
+            <p className="m-4 text-center font-bold text-green-400 outline-4 outline-green-400 p-5">{joke}</p>
         </div>
     );
 }
