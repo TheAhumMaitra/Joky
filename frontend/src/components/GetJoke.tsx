@@ -1,10 +1,10 @@
 export default async function JokePage() {
-    const data = await fetch("http://127.0.0.1:8000/joke");
+    const data = await fetch("https://joky.onrender.com/joke");
     const joke = await data.text();
 
     return (
-        <div>
-            <p>{joke}</p>
+        <div className=" h-[40vh] flex flex-col items-center justify-center">
+            <p className="m-4 text-center font-bold text-green-500">{joke}</p>
         </div>
     );
 }
