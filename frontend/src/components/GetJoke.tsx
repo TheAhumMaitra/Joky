@@ -1,6 +1,8 @@
+export const dynamic = "force-dynamic";
+
 export default async function JokePage() {
     const api_url = "https://joky.onrender.com/joke";
-    const data = await fetch(api_url);
+    const data = await fetch(api_url, {cache: "no-store"});
     const joke = await data.text();
 
     return (
