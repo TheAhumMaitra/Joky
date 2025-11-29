@@ -1,5 +1,6 @@
 export default async function JokePage() {
-    const data = await fetch("https://joky.onrender.com/joke");
+    const api_url = "https://joky.onrender.com/joke";
+    const data = await fetch(api_url);
     const joke = await data.text();
 
     return (
